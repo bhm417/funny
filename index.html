@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+  a{
+    display:block;
+    text-decoration:none;
+    background:lightgray;
+    padding:10px;
+    text-align:center;
+
+  }
+
+a:hover{
+  background:lightblue;
+}
+  ul{list-style:none;
+  display:flex;}
+li{
+
+  width:200px;
+
+}
+
+ul ul{
+  display:flex;
+  flex-direction:column;
+  padding:0;
+}
+
+.menubar li ul{
+  display:none;
+}
+
+.menubar li:hover ul{
+  display:block;
+}
+</style>
+</head>
+<body>
+  <div class="menubar">
+  <ul>
+    <li><a href="#">html</a></li>
+    <li><a href="#" >css</a>
+      <ul >
+      <li><a href="#">static</a></li>
+      <li><a href="#">dynamic</a></li>
+    </ul></li>
+    <li><a href="#">javascript</a></li>
+  </ul></div>
+</body>
+</html>
